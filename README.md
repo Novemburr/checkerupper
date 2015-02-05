@@ -1,8 +1,8 @@
-checkerupper
+#checkerupper
 
 A simple bash command to check up on sites;
 
-TO DO:
+#TO DO:
 
 Add ease of use commands;
 
@@ -16,7 +16,7 @@ Include what each error code means at the bottom of the email, only once;
 
 Only send one mail with multiple recipients instead of one mail for each;
 
-USAGE:
+#USAGE:
 
 Populate a sites.txt file with the sites you wish to check in the same directory as auto_checker.sh;
 
