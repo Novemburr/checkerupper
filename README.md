@@ -10,9 +10,17 @@ Look into better handling of responses from curl;
 
 Add a sufficient number of sites with varying response codes;
 
+Allow files to be passed as arguments, may require switches;
+
+Include what each error code means at the bottom of the email, only once;
+
+Only send one mail with multiple recipients instead of one mail for each;
+
 USAGE:
 
 Populate a sites.txt file with the sites you wish to check in the same directory as auto_checker.sh;
+
+If you want to send to a number of emails you may populate a file email_list.txt;
 
 Basic usage from command line:
 ./auto_checker.sh email@domain.com;
