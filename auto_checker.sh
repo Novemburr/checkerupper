@@ -1,5 +1,9 @@
 #!/bin/bash
-rm output.txt;
+if [ -a output.txt ]
+then
+	rm output.txt;
+fi
+
 while read file; do
 	curl -sL -w "%{http_code} %{url_effective}\\n" "$file" -o /dev/null >> output.txt;
 	sed -i '/^\(1\|2\|3\)/d' output.txt;
