@@ -13,4 +13,4 @@ while read file; do
 		:
 		fi
 	fi
-done < ./site_list/sites.txt;
+done < ./sites.txt;
