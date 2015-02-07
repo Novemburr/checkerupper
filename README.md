@@ -8,9 +8,9 @@ Add ease of use commands;
 
 Look into better handling of responses from curl;
 
-Add a sufficient number of sites with varying response codes;
+Add a sufficient number of test sites with varying response codes;
 
-Allow files to be passed as arguments, may require switches;
+Allow files to be passed as arguments, may require switches or even....reading user input...my god..;
 
 Include what each error code means at the bottom of the email, only once;
 
