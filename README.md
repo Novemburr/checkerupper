@@ -14,6 +14,8 @@ Allow files to be passed as arguments, may require switches or even....reading u
 
 Include what each error code means at the bottom of the email, only once;
 
+Investigate 503 also showing up when a 403 is present;
+
 #USAGE:
 
 Populate a sites.txt file with the sites you wish to check in the same directory as auto_checker.sh;
