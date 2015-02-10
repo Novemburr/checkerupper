@@ -20,6 +20,7 @@ then
         if [ $1 ]
         then
                 mail -s "Sites Down" $1 < output.txt;
+		echo 'mail sent';
                 #rm output.txt
         else
                 if [ -s email_list.txt ]
@@ -32,6 +33,11 @@ then
                 fi
                 #rm output.txt
         fi
+else
+	if [ $1 ]
+	then
+		echo 'empty output';
+	fi
 fi      
 
 if [ -a output.txt ]
