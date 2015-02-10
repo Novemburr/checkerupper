@@ -15,6 +15,8 @@ Allow files to be passed as arguments, may require switches or even....reading u
 Include what each error code means at the bottom of the email, only once;
 
 Investigate 503 also showing up when a 403 is present;
+
+Only send so many emails in an our per domain so as not to spam the inbox with the same message conceivably all night;
 ```
 grep '500' error_codes.csv 
 500,Internal Server Error,The server encountered an unexpected condition which prevented it from fulfilling the request.
