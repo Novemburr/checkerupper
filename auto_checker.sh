@@ -10,7 +10,7 @@ while read file; do
 done < sites.txt;
 
 sed -i "/^\(0\|1\|2\|3\)/d" output.txt;
-cut -d' ' -f1 output.txt | uniq | grep -f - error_codes.csv >> output.txt;
+cut -d' ' -f1 output.txt | uniq | grep -w -f - error_codes.csv >> output.txt;
 sed -i "s/\.$/\.\n/g" output.txt;
 #sed -i "s/[a-zA-z]\,[a-zA-Z]/\n/g" output.txt;
 sed -i "s/\,/\,\ /g" output.txt;
