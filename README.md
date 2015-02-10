@@ -14,8 +14,6 @@ Allow files to be passed as arguments, may require switches;
 
 Include what each error code means at the bottom of the email, only once;
 
-Only send one mail with multiple recipients instead of one mail for each;
-
 #USAGE:
 
 Populate a sites.txt file with the sites you wish to check in the same directory as auto_checker.sh;
