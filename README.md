@@ -15,13 +15,13 @@ Allow files to be passed as arguments, may require switches or even....reading u
 Include what each error code means at the bottom of the email, only once;
 
 Investigate 503 also showing up when a 403 is present;
-
-Only send so many emails in an our per domain so as not to spam the inbox with the same message conceivably all night;
 ```
 grep '500' error_codes.csv 
 500,Internal Server Error,The server encountered an unexpected condition which prevented it from fulfilling the request.
 503,Service Unavailable,The server is currently unable to handle the request due to a temporary overloading or maintenance of the server. The implication is that this is a temporary condition which will be alleviated after some delay. If known, the length of the delay MAY be indicated in a Retry-After header. If no Retry-After is given, the client SHOULD handle the response as it would for a 500 response.
 ```
+
+Only send so many emails in an our per domain so as not to spam the inbox with the same message conceivably all night;
 
 #USAGE:
 
