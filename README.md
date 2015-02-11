@@ -12,7 +12,7 @@ Add a sufficient number of test sites with varying response codes;
 
 Allow files to be passed as arguments, may require switches or even....reading user input...my god..;
 
-Investigate 503 also showing up when a 403 is present;
+Investigate 503 also showing up when a 403 is present; Or rather 403 and 503 always show up, or always show up in response to 500 and 400 showing up;
 ```
 grep '500' error_codes.csv 
 500,Internal Server Error,The server encountered an unexpected condition which prevented it from fulfilling the request.
