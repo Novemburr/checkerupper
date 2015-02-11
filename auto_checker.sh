@@ -30,7 +30,7 @@ then
 	else
 		if [ -s ./email_list.txt ]
 		then
-			echo "$(date +%H)" >> ./debug.log;
+			echo "$(date +%H)" >> ./time.txt;
 			COUNT=$(wc -l < ./debug.log);
 			if [[ $COUNT < 4 ]]
 			then
@@ -57,14 +57,14 @@ if [ "$NOW" == "$THEN" ];
 then
 	:
 else
-	if [ -e ./debug.log ];
+	if [ -e ./time.txt ];
 	then
-		rm ./debug.log;
-		touch ./debug.log;
+		rm ./time.txt;
+		touch ./time.txt;
 	else
 		touch ./badthing.log;
 		echo "Something happened causing debug.log to disapear prematurely" >> badthing.log;
-		touch ./debug.log;
+		touch ./time.txt;
 	fi
 fi
 
