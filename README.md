@@ -21,10 +21,6 @@ grep '500' error_codes.csv
 503,Service Unavailable,The server is currently unable to handle the request due to a temporary overloading or maintenance of the server. The implication is that this is a temporary condition which will be alleviated after some delay. If known, the length of the delay MAY be indicated in a Retry-After header. If no Retry-After is given, the client SHOULD handle the response as it would for a 500 response.
 ```
 
-Only send so many emails in an our per domain so as not to spam the inbox with the same message conceivably all night;
-
-Fix pathing;
-
 #USAGE:
 
 Populate a sites.txt file with the sites you wish to check in the same directory as auto_checker.sh;
