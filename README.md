@@ -35,7 +35,7 @@ Advanced usage reading from the email_list.txt:
 ./auto_checker.sh
 \#This will run the command and send the output to the emails located in the email_list.txt file, note currently this sends separate mails for each user but not each site;
 
-For email_list.txt make sure the emails are on separate lines:
+For email_list.txt make sure the emails are on separate lines.
 ```
 Good:
 yes@domain.com
@@ -47,4 +47,17 @@ works@domain.com
 Bad:
 nope@domain.com, fail@domain.com, lol@domain.com
 ```
-\#This may be implemented later depending on my laziness factor;
+\#This format may be implemented later depending on my laziness factor;
+
+The sites.txt file fits the same format:
+```
+Good:
+google.com
+linux.com
+potatoe.com
+```
+
+```
+Bad:
+microsoft.com, lolcatsjpg.com, oranges.com
+```
