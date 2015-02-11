@@ -31,7 +31,7 @@ then
 		if [ -s ./email_list.txt ]
 		then
 			echo "$(date +%H)" >> ./time.txt;
-			COUNT=$(wc -l < ./debug.log);
+			COUNT=$(wc -l < ./time.txt);
 			if [[ $COUNT < 4 ]]
 			then
 				while read file; do
@@ -52,7 +52,7 @@ else
 fi      
 
 NOW=$(date +%H);
-THEN=$(head -n 1 ./debug.log)
+THEN=$(head -n 1 ./time.txt)
 if [ "$NOW" == "$THEN" ];
 then
 	:
@@ -63,7 +63,7 @@ else
 		touch ./time.txt;
 	else
 		touch ./badthing.log;
-		echo "Something happened causing debug.log to disapear prematurely" >> badthing.log;
+		echo "Something happened causing time.txt to disapear prematurely" >> badthing.log;
 		touch ./time.txt;
 	fi
 fi
