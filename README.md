@@ -23,6 +23,8 @@ grep '500' error_codes.csv
 
 Only send so many emails in an our per domain so as not to spam the inbox with the same message conceivably all night;
 
+Fix pathing;
+
 #USAGE:
 
 Populate a sites.txt file with the sites you wish to check in the same directory as auto_checker.sh;
