@@ -12,8 +12,6 @@ Add a sufficient number of test sites with varying response codes;
 
 Allow files to be passed as arguments, may require switches or even....reading user input...my god..;
 
-Include what each error code means at the bottom of the email, only once;
-
 Investigate 503 also showing up when a 403 is present;
 ```
 grep '500' error_codes.csv 
