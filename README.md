@@ -8,8 +8,6 @@ Add ease of use commands;
 
 Look into better handling of responses from curl;
 
-Add a sufficient number of test sites with varying response codes;
-
 Allow files to be passed as arguments, may require switches or even....reading user input...my god..;
 
 Investigate 503 also showing up when a 403 is present; Or rather 403 and 503 always show up, or always show up in response to 500 and 400 showing up;
@@ -18,6 +16,9 @@ grep '500' error_codes.csv
 500,Internal Server Error,The server encountered an unexpected condition which prevented it from fulfilling the request.
 503,Service Unavailable,The server is currently unable to handle the request due to a temporary overloading or maintenance of the server. The implication is that this is a temporary condition which will be alleviated after some delay. If known, the length of the delay MAY be indicated in a Retry-After header. If no Retry-After is given, the client SHOULD handle the response as it would for a 500 response.
 ```
+Add loading animation when used on command line with param;
+
+Add flag for verbose output when used on command line;
 
 #USAGE:
 
